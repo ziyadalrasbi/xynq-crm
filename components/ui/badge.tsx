@@ -3,12 +3,12 @@ import clsx from 'clsx';
 type Variant = 'default' | 'overdue' | 'due' | 'won' | 'muted' | 'accent';
 
 const variants: Record<Variant, string> = {
-  default: 'bg-white text-ink border-border',
-  overdue: 'bg-overdue/10 text-overdue border-overdue/30',
-  due: 'bg-due/10 text-due border-due/30',
-  won: 'bg-won/10 text-won border-won/30',
-  muted: 'bg-bg text-muted border-border',
-  accent: 'bg-accent/10 text-accent border-accent/30',
+  default: 'bg-slate-100 text-slate-600',
+  overdue: 'bg-red-50 text-red-600',
+  due: 'bg-amber-50 text-amber-700',
+  won: 'bg-emerald-50 text-emerald-700',
+  muted: 'bg-slate-100 text-slate-500',
+  accent: 'bg-indigo-50 text-indigo-600',
 };
 
 export function Badge({
@@ -23,7 +23,7 @@ export function Badge({
   return (
     <span
       className={clsx(
-        'inline-flex items-center rounded border px-1.5 py-0.5 text-[11px] font-medium leading-none',
+        'inline-flex items-center rounded-md px-2 py-0.5 text-xs font-medium',
         variants[variant],
         className,
       )}

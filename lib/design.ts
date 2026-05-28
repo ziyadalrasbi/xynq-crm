@@ -1,12 +1,12 @@
 export const COLORS = {
-  bg: '#FAFAF8',
-  ink: '#1A1A1A',
-  accent: '#2D5BFF',
-  overdue: '#D4453A',
-  due: '#D4873A',
-  won: '#1A8754',
-  muted: '#6B6B6B',
-  border: '#E5E5E0',
+  bg: '#F8FAFC',
+  ink: '#0F172A',
+  accent: '#6366F1',
+  overdue: '#EF4444',
+  due: '#F59E0B',
+  won: '#10B981',
+  muted: '#64748B',
+  border: '#E2E8F0',
 } as const;
 
 export const STAGES = [

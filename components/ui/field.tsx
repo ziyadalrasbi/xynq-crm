@@ -2,11 +2,11 @@ import clsx from 'clsx';
 import type { InputHTMLAttributes, SelectHTMLAttributes, TextareaHTMLAttributes } from 'react';
 
 const fieldClass =
-  'w-full rounded border border-border bg-white px-2.5 py-1.5 text-sm focus:border-accent focus:outline-none';
+  'w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition';
 
 export function Label({ children, htmlFor }: { children: React.ReactNode; htmlFor?: string }) {
   return (
-    <label htmlFor={htmlFor} className="block text-xs font-medium uppercase tracking-wide text-muted">
+    <label htmlFor={htmlFor} className="mb-1.5 block text-xs font-medium text-slate-600">
       {children}
     </label>
   );
