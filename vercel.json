@@ -1,0 +1,20 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/sequences",
+      "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/meeting-prep",
+      "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/auto-drafts",
+      "schedule": "0 7 * * *"
+    },
+    {
+      "path": "/api/cron/weekly-digest",
+      "schedule": "0 8 * * 1"
+    }
+  ]
+}
